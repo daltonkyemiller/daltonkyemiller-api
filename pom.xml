@@ -14,7 +14,7 @@
 	<name>daltonkyemiller-api</name>
 	<description>API for daltonkyemiller</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
