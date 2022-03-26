@@ -1,4 +1,4 @@
-package com.daltonkyemiller.daltonkyemillerapi;
+package com.daltonkyemiller.daltonkyemillerapi.project;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,5 +17,9 @@ public class  ProjectService {
 
     public Optional<Project> getProjectByName(String name){
         return projectRepository.findProjectByProjectNameEquals(name);
+    }
+
+    public void addProject(Project project){
+        projectRepository.save(project);
     }
 }

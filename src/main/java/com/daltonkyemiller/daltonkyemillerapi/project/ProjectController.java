@@ -1,7 +1,8 @@
-package com.daltonkyemiller.daltonkyemillerapi;
+package com.daltonkyemiller.daltonkyemillerapi.project;
 
 
 import lombok.AllArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,8 +18,15 @@ public class ProjectController  {
     public List<Project> fetchAllProjects(){
         return projectService.getAllProjects();
     }
+
     @GetMapping("{name}")
     public Optional<Project> fetchProjectByName(@PathVariable("name") String name){
         return projectService.getProjectByName(name);
     }
+
+    @PostMapping("add")
+    public void uploadProject(@Validated @RequestBody Project project){
+        projectService.addProject(project);
+    }
+
 }

@@ -1,9 +1,7 @@
-package com.daltonkyemiller.daltonkyemillerapi;
+package com.daltonkyemiller.daltonkyemillerapi.project;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.Map;
 
 @Data
 @AllArgsConstructor

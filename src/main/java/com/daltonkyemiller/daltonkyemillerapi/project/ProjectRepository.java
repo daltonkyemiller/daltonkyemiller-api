@@ -1,4 +1,4 @@
-package com.daltonkyemiller.daltonkyemillerapi;
+package com.daltonkyemiller.daltonkyemillerapi.project;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
