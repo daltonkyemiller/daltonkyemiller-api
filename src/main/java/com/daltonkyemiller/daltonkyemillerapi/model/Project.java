@@ -1,4 +1,4 @@
-package com.daltonkyemiller.daltonkyemillerapi.project;
+package com.daltonkyemiller.daltonkyemillerapi.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
@@ -13,7 +13,6 @@ import java.util.List;
 
 @Data
 @Document
-
 public class Project {
     @Id
     private String id;

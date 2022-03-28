@@ -1,4 +1,4 @@
-package com.daltonkyemiller.daltonkyemillerapi.project;
+package com.daltonkyemiller.daltonkyemillerapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
