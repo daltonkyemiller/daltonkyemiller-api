@@ -4,6 +4,7 @@ package com.daltonkyemiller.daltonkyemillerapi.controller;
 import com.daltonkyemiller.daltonkyemillerapi.model.Project;
 import com.daltonkyemiller.daltonkyemillerapi.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,8 +22,8 @@ public class ProjectController  {
     }
 
     @GetMapping
-    public List<Project> fetchAllProjects(){
-        return projectService.getAllProjects();
+    public ResponseEntity<List<Project>> fetchAllProjects(){
+        return ResponseEntity.ok().body(projectService.getAllProjects());
     }
 
     @GetMapping("{nameOrId}")

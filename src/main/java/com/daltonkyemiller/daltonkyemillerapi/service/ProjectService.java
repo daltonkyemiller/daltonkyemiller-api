@@ -25,11 +25,7 @@ public class ProjectService {
     }
 
     public Optional<Project> getProjectByNameOrId(String nameOrId){
-        Optional<Project> project = projectRepository.findProjectByProjectNameOrIdEquals(nameOrId, nameOrId);
-        if(!project.isPresent()){
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Project not found");
-        }
-        return project;
+        return projectRepository.findProjectByProjectNameOrIdEquals(nameOrId, nameOrId);
     }
 
     public Optional<Project> deleteProjectById(String id){
@@ -37,11 +33,6 @@ public class ProjectService {
     }
 
     public void addProject(Project project){
-        // Check if project exists in database
-        Optional<Project> projectOptional = projectRepository.findProjectByProjectNameEquals(project.getProjectName());
-        if(projectOptional.isPresent()){
-            throw new IllegalStateException("Project already exists, try updating project instead.");
-        }
         projectRepository.save(project);
     }
 }
