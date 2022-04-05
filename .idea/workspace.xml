@@ -8,47 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8b8e60-d9ed-4bb4-909b-1a4c3784bbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/PasswordConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/PasswordConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/auth/jwt/JwtConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/auth/jwt/JwtSecretKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/auth/jwt/JwtTokenVerifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/auth/jwt/JwtUsernamePassAuthFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/auth/jwt/UsernamePassAuthRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/controller/TemplateController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/ProjectController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/ProjectRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/ProjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/model/Dimensions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/model/Project.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/project/model/ProjectPhoto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/security/PasswordConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/security/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/model/UserPermission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/daltonkyemiller/daltonkyemillerapi/user/model/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +45,6 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/model/User.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dockerfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/UserController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/PasswordConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -136,7 +97,22 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DaltonkyemillerApiApplication">
+  <component name="RunManager" selected="JUnit.DaltonkyemillerApiApplicationTests">
+    <configuration name="DaltonkyemillerApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="daltonkyemiller-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.daltonkyemiller.daltonkyemillerapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.daltonkyemiller.daltonkyemillerapi" />
+      <option name="MAIN_CLASS_NAME" value="com.daltonkyemiller.daltonkyemillerapi.DaltonkyemillerApiApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="daltonkyemiller-api-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/daltonkyemiller-api-0.0.1-SNAPSHOT.jar" />
       <method v="2" />
@@ -164,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DaltonkyemillerApiApplicationTests" />
         <item itemvalue="Spring Boot.DaltonkyemillerApiApplication" />
         <item itemvalue="JAR Application.daltonkyemiller-api-0.0.1-SNAPSHOT.jar" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
