@@ -1,13 +1,16 @@
 package com.daltonkyemiller.daltonkyemillerapi.user.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Objects;
 import java.util.Set;
@@ -16,7 +19,7 @@ import java.util.Set;
 @Document
 public class User implements UserDetails {
     @Id
-    private final String id;
+    private String id;
 
     @NotNull
     @Indexed(unique = true)
@@ -32,15 +35,20 @@ public class User implements UserDetails {
     private final boolean isCredentialsNonExpired;
     private final boolean isEnabled;
 
+    @CreatedDate
+    private LocalDateTime created;
+
+    @LastModifiedDate
+    private LocalDateTime modified;
+
     public User(
-            String id, String username,
+            String username,
             String password,
             Set<? extends GrantedAuthority> grantedAuthorities,
             boolean isAccountNonExpired,
             boolean isAccountNonLocked,
             boolean isCredentialsNonExpired,
             boolean isEnabled) {
-        this.id = id;
         this.username = username;
         this.password = password;
         this.grantedAuthorities =
