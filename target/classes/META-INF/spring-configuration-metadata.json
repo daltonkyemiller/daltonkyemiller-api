@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "com.daltonkyemiller.daltonkyemillerapi.auth.jwt.JwtConfig",
+      "sourceType": "com.daltonkyemiller.daltonkyemillerapi.auth.jwt.JwtConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.daltonkyemiller.daltonkyemillerapi.auth.jwt.JwtConfig"
+    },
+    {
+      "name": "jwt.token-expires-after-days",
+      "type": "java.lang.Integer",
+      "sourceType": "com.daltonkyemiller.daltonkyemillerapi.auth.jwt.JwtConfig"
+    },
+    {
+      "name": "jwt.token-prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.daltonkyemiller.daltonkyemillerapi.auth.jwt.JwtConfig"
+    }
+  ],
+  "hints": []
+}
