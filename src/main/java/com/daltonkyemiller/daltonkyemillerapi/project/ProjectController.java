@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/v1/projects")
+@RequestMapping("v1/projects")
 public class ProjectController  {
     private final ProjectService projectService;
 
@@ -27,8 +27,8 @@ public class ProjectController  {
     }
 
     @GetMapping("{nameOrId}")
-    public Optional<Project> fetchProjectByName(@PathVariable("nameOrId") String nameOrId){
-        return projectService.getProjectByNameOrId(nameOrId);
+    public ResponseEntity<Project> fetchProjectByName(@PathVariable("nameOrId") String nameOrId){
+        return ResponseEntity.ok().body(projectService.getProjectByNameOrId(nameOrId));
     }
 
     @PostMapping("add")

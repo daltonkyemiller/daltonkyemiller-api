@@ -2,7 +2,9 @@ package com.daltonkyemiller.daltonkyemillerapi.project;
 
 import com.daltonkyemiller.daltonkyemillerapi.project.model.Project;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,8 +23,9 @@ public class ProjectService {
         return projectRepository.findAll();
     }
 
-    public Optional<Project> getProjectByNameOrId(String nameOrId){
-        return projectRepository.findProjectByProjectNameOrIdEquals(nameOrId, nameOrId);
+    public Project getProjectByNameOrId(String nameOrId) throws ResponseStatusException {
+        return projectRepository.findProjectByProjectNameOrIdEquals(nameOrId, nameOrId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
     public Optional<Project> deleteProjectById(String id){

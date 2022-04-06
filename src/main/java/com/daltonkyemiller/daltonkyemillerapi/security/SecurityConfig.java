@@ -52,7 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterAfter(new JwtTokenVerifier(jwtConfig, secretKey), JwtUsernamePassAuthFilter.class)
                 .authorizeRequests()
                 .antMatchers("/", "index", "/css/*", "/js/*", "/login").permitAll()
-                .antMatchers( HttpMethod.GET, "/api/**/projects/**").permitAll()
+                .antMatchers( HttpMethod.GET, "/v*/projects/**").permitAll()
                 .anyRequest()
                 .authenticated();
     }

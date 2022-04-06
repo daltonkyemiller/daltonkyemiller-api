@@ -8,13 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8b8e60-d9ed-4bb4-909b-1a4c3784bbc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daltonkyemiller-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/daltonkyemiller-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/DaltonkyemillerApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/auth/FakeUserDaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/project/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/project/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/project/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/project/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/daltonkyemiller/daltonkyemillerapi/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +84,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
@@ -108,7 +110,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DaltonkyemillerApiApplication">
+  <component name="RunManager" selected="JUnit.DaltonkyemillerApiApplicationTests">
     <configuration name="DaltonkyemillerApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="daltonkyemiller-api" />
       <extension name="coverage">
@@ -119,6 +121,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.daltonkyemiller.daltonkyemillerapi" />
       <option name="MAIN_CLASS_NAME" value="com.daltonkyemiller.daltonkyemillerapi.DaltonkyemillerApiApplicationTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,6 +140,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.daltonkyemiller.daltonkyemillerapi.DaltonkyemillerApiApplication" />
+      <option name="PROGRAM_PARAMETERS" value="--jasypt.encryptor.password=uchYVwrdhPv272U6ZH22xVlXWeuTxaznSdCzFFBqFVfQ8pR3nvyJ/hxClu2Yq7bc" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,10 +154,16 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="JAR Application.daltonkyemiller-api-0.0.1-SNAPSHOT.jar" />
+      <item itemvalue="JUnit.DaltonkyemillerApiApplicationTests" />
+      <item itemvalue="Spring Boot.DaltonkyemillerApiApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DaltonkyemillerApiApplication" />
         <item itemvalue="JUnit.DaltonkyemillerApiApplicationTests" />
+        <item itemvalue="Spring Boot.DaltonkyemillerApiApplication" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="JAR Application.daltonkyemiller-api-0.0.1-SNAPSHOT.jar" />
       </list>
