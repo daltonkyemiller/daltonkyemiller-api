@@ -22,7 +22,7 @@ jobs:
         cache: maven
         
     - name: Build with Maven
-      run: mvn -Djasypt.encryptor.password=${{ secrets.JASYPT_SECRET }} -B package --file pom.xml
+      run: mvn -D--jasypt.encryptor.password=${{ secrets.JASYPT_SECRET }} -B package --file pom.xml
       
     - name: Save Jar
       uses: actions/upload-artifact@v3.0.0
