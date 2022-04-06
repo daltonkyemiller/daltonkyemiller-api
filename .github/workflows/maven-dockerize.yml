@@ -26,7 +26,8 @@ jobs:
     - name: Save Jar
       uses: actions/upload-artifact@v3.0.0
       with:
-        path: ${{ github.repository }}/target/artifact.jar
+        path: ${{ github.workspace }}/target/*.jar
+        retention-days: 1
   deploy:
     runs-on: ubuntu-latest
     needs: build
