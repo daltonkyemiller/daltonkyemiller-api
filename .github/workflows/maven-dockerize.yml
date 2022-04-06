@@ -6,8 +6,6 @@ name: Java CI with Maven
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -28,7 +26,7 @@ jobs:
     - name: Save Jar
       uses: actions/upload-artifact@v3.0.0
       with:
-        path: ${{ github.repository }}/target/*.jar
+        path: ${{ github.repository }}/target/artifact.jar
   deploy:
     runs-on: ubuntu-latest
     needs: build
