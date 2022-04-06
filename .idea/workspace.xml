@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c8b8e60-d9ed-4bb4-909b-1a4c3784bbc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/daltonkyemiller-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +103,12 @@
       <command value="java " />
       <command value="java -cp //jasypt-1.9.3/lib/jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI input=”xyz123″ password=secretkey algorithm=PBEWithMD5AndDES  " />
       <command value="mvn clean" />
+      <command value="mvn -Djasypt.encryptor.password=uchYVwrdhPv272U6ZH22xVlXWeuTxaznSdCzFFBqFVfQ8pR3nvyJ/hxClu2Yq7bc -B package --file pom.xml" />
+      <command value="mvn -DJASYPT_PASSWORD=uchYVwrdhPv272U6ZH22xVlXWeuTxaznSdCzFFBqFVfQ8pR3nvyJ/hxClu2Yq7bc -B package --file pom.xml" />
+      <command value="mvn -B package --file pom.xml" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DaltonkyemillerApiApplicationTests">
+  <component name="RunManager" selected="Spring Boot.DaltonkyemillerApiApplication">
     <configuration name="DaltonkyemillerApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="daltonkyemiller-api" />
       <extension name="coverage">
@@ -155,10 +160,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaltonkyemillerApiApplicationTests" />
         <item itemvalue="Spring Boot.DaltonkyemillerApiApplication" />
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="JAR Application.daltonkyemiller-api-0.0.1-SNAPSHOT.jar" />
+        <item itemvalue="JUnit.DaltonkyemillerApiApplicationTests" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
