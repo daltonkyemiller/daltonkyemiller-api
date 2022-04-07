@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      host: localhost
+      port: 27017
+      database: testing
+jwt:
+  tokenExpiresAfterDays: 14
+  tokenPrefix: 'Bearer '
+  secret: devpassworddevpassworddevpassworddevpassworddevpassworddevpassworddevpassworddevpassworddevpassworddevpassword
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+jasypt:
+  encryptor:
+    password: testingpassword

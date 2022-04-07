@@ -1,18 +1,15 @@
 package com.daltonkyemiller.daltonkyemillerapi.user;
 
-import com.daltonkyemiller.daltonkyemillerapi.project.ProjectService;
 import com.daltonkyemiller.daltonkyemillerapi.user.model.User;
+import com.mongodb.MongoWriteException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("v1/users")
@@ -34,5 +31,11 @@ public class UserController {
     @PreAuthorize("hasAuthority('user:read')")
     public ResponseEntity<UserDetails> fetchUserByUsername(@PathVariable("username") String username){
         return ResponseEntity.ok().body(userService.loadUserByUsername(username));
+    }
+
+    @PostMapping("add")
+    @PreAuthorize("hasAuthority('user:write')")
+    public ResponseEntity<User> addUser(@Validated @RequestBody User user) throws MongoWriteException {
+        return ResponseEntity.ok().body(userService.addUser(user));
     }
 }
